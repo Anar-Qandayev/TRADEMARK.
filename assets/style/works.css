@@ -1,0 +1,32 @@
+#work-page {
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+#work-page .work_page-head {
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+#work-page .work_page-head h1 {
+  font-size: 3.3rem;
+  font-family: Helvetica, sans-serif;
+  font-weight: 100;
+  color: #038112;
+}
+#work-page .work_page-head p {
+  font-size: 1.7rem;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  margin-top: 20px;
+}
+#work-page .work_page-images {
+  width: 100%;
+}
+#work-page .work_page-images img {
+  width: 240px;
+  height: 240px;
+  margin: 57px;
+}/*# sourceMappingURL=works.css.map */
