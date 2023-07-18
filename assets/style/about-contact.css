@@ -26,6 +26,7 @@
 }
 #about-page .meet-part {
   width: 100%;
+  height: 100vh;
   padding: 60px 20px;
   display: flex;
   flex-direction: column;
@@ -63,7 +64,7 @@
 
 #contact-page {
   width: 100%;
-  height: 100%;
+  height: auto;
   margin: 50px 0;
   display: flex;
   border: 1px solid #038112;
@@ -144,4 +145,82 @@
 #contact-page .contact-bg img {
   width: 100%;
   height: 100%;
+}
+
+@media only screen and (max-width: 1000px) {
+  #about-page .meet-part {
+    height: auto !important;
+  }
+  #about-page .meet-part .figures {
+    flex-direction: column !important;
+    flex-wrap: wrap;
+  }
+  #contact-page {
+    flex-direction: column;
+  }
+  #contact-page .contact {
+    width: 100%;
+  }
+  #contact-page .contact-bg {
+    display: none;
+  }
+}
+@media only screen and (max-width: 560px) {
+  .about_contact-head p {
+    width: 70% !important;
+  }
+}
+@media only screen and (max-width: 380px) {
+  hgroup {
+    width: 100% !important;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+  }
+  hgroup label {
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+    color: rgb(67, 65, 65);
+    font-weight: bold;
+  }
+  hgroup input {
+    width: 100%;
+    height: 100%;
+    height: 35px;
+    padding: 0 5px;
+    margin: 10px 0;
+    border: 1px solid #038112;
+  }
+  hgroup input:hover {
+    border: 2px solid black;
+  }
+  #textarea {
+    width: 96%;
+  }
+  #textarea input {
+    width: 100%;
+    height: 100%;
+    height: 155px;
+    padding: 0 5px;
+    margin: 10px 0;
+    border: 1px solid #038112;
+  }
+  #textarea input:hover {
+    border: 2px solid black;
+  }
+  button {
+    width: 130px;
+    height: 50px;
+    margin-top: 30px;
+    background-color: #038112;
+    border: none;
+    transition: 0.4s;
+    color: #fff;
+  }
+  button:hover {
+    border: 1px solid #038112;
+    background-color: #fff;
+    color: #038112;
+  }
 }/*# sourceMappingURL=about-contact.css.map */
